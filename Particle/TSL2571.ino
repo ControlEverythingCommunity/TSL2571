@@ -7,7 +7,7 @@
 #include <application.h>
 #include <spark_wiring_i2c.h>
 
-// I2C address of the TSL2571 0x39(63)
+// I2C address of the TSL2571 0x39(57)
 #define Addr 0x39
 
 float luminance = 0;
