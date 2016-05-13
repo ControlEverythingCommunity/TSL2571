@@ -35,7 +35,7 @@ public class TSL2571
 		device.write(0x0F | 0x80, (byte)0x20);
 		Thread.sleep(800);
 		
-		// Read 6 Bytes of data from address 0x14(20)
+		// Read 4 Bytes of data from address 0x14(20)
 		// c0Data lsb, c0Data msb, c1Data lsb, c1Data msb
 		byte[] data = new byte[4];
 		device.read(0x14 | 0x80, data, 0, 4);
