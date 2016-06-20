@@ -10,7 +10,7 @@
 // I2C address of the TSL2571 0x39(57)
 #define Addr 0x39
 
-float luminance = 0;
+double luminance = 0.0;
 void setup()
 {
     // Set variable
