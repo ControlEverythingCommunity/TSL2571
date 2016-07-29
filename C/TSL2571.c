@@ -46,8 +46,8 @@ void main()
 	write(file, config, 2);
 	sleep(1);
 
-	// Read 4 bytes of data from register(0x14 | 80)
-	// temp msb, temp lsb
+	// Read 4 bytes of data from register(0x14 | 0x80)
+	// c0Data lsb, c0Data msb, c1Data lsb, c1Data msb
 	char reg[1] = {0x14 | 0x80};
 	write(file, reg, 1);
 	char data[4] = {0};
