@@ -53,7 +53,7 @@ void main()
 	char data[4] = {0};
 	if(read(file, data, 4) != 4)
 	{
-		printf("Erorr : Input/output Erorr \n");
+		printf("Error : Input/Output error \n");
 	}
 	else
 	{
